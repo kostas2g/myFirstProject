@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ΠΕΤΡΑ-ΨΑΛΙΔΙ-ΧΑΡΤΙ</title>
+	<style>
+		*{
+			font-size:40px;
+			
+		}
+		html{
+			background: url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
+			background-repeat: repeat;
+			background-size: auto;
+		}
+		#container{
+		text-align:center;
+		position:relative;
+		  top: 10px;
+		}
+		#images  img {
+			margin:0 30px 0 30px;
+		}
+		img:hover{
+			transform: scale(1.5);			
+			 cursor:pointer;
+		}
+		#score{
+			margin-top:150px;
+		}
+		#my-choose, #pc-choose{
+			color:green;
+		}
+		#winLose{
+			color:blue;
+		}
+	
+	</style>
+  </head>
+  <body>
+  <div id="container">
+		<h2>ΠΕΤΡΑ-ΨΑΛΙΔΙ-ΧΑΡΤΙ</h2>
+		<div id="images">
+			<img src="rock.svg" id="img-petra" width="200px" height="200px" alt="πέτρα">
+			<img src="scissors.svg" id="img-psalidi" width="200px" height="200px" alt="ψαλίδι">
+			<img src="paper.svg" id="img-xarti" width="200px" height="200px" alt="χαρτί">
+		</div>
+		<div id="score">
+			<p>Επέλεξες: <span id="my-choose"></span> | ο υπολογιστής επέλεξε: <span id="pc-choose"></span></p>
+			<p id="winLose"></p>
+			<p>Το σκορ σου είναι : <span id="my-score"></span> | το σκορ του υπολογιστή είναι : <span id="pc-score"></span></p>
+		</div>
+	</div>
+	<!--<script src="main2.js"></script>-->
+     <script src="main.js"></script>
+  </body>
+</html>
